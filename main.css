@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/09201a1cc16b4ea1d1b7c8fdf90d5a60.woff2) format('woff2'), url(fonts/4ac54dd4f4c6e2a86e21aee167e1a5a1.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/12a234e87f37d441adc9bb2e3dec13de.woff2) format('woff2'), url(fonts/2032f2b161a7a109a9d0cc3f6ad3b735.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url(fonts/69279aef7fbc11101022a9f06079bbbf.woff2) format('woff2'), url(fonts/e87e43c57f21dd637791c6bfa534c1af.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -52,6 +70,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: lato;
+  will-change: transform;
 }
 .start p {
   color: #fff;

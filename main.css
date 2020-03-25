@@ -120,8 +120,8 @@ z-index 3 canvas {
 /*
  * MUTE BUTTON
  */
-.mute,
-.unmute {
+img.mute,
+img.unmute {
   position: absolute;
   bottom: 40px;
   right: 40px;

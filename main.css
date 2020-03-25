@@ -118,6 +118,18 @@ z-index 3 canvas {
   pointer-events: auto;
 }
 /*
+ * MUTE BUTTON
+ */
+.mute,
+.unmute {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+/*
  * CONTAINER MENU
  */
 .background {
@@ -149,7 +161,7 @@ z-index 3 canvas {
 .container .header {
   position: absolute;
   top: 0;
-  padding: 30px;
+  padding: 40px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -167,7 +179,7 @@ z-index 3 canvas {
   color: #000;
   text-transform: uppercase;
   font-weight: 1000;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   margin: 0px 10px 0px 10px;
   cursor: pointer;
 }
@@ -177,10 +189,10 @@ z-index 3 canvas {
 }
 .container .modal {
   position: absolute;
-  padding: 30px;
+  padding: 60px;
   width: 500px;
-  height: 300px;
-  background: rgba(255,255,255,0.314);
+  height: 100vh;
+  background: rgba(255,255,255,0.502);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,7 +222,7 @@ z-index 3 canvas {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 .container .modal .container p {
   font-family: lato;
@@ -239,12 +251,12 @@ z-index 3 canvas {
 }
 .closeModal {
   animation-name: closeModal;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 .openModal {
   animation-name: openModal;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 @-moz-keyframes fadeOut {

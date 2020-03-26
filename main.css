@@ -26,7 +26,7 @@ html {
 }
 body {
   overflow: hidden;
-  background: #d8dcff;
+  background: linear-gradient(#d5d9ff, #c2c8fc);
 }
 /**
  * TYPO
@@ -79,7 +79,7 @@ b {
  * START
  */
 button {
-  background: #c7cdff;
+  background: #afb8ff;
   color: #fff;
   padding: 5px 10px 5px 10px;
   width: 100px;
@@ -110,7 +110,7 @@ button.okay:hover {
 .start {
   z-index: 10;
   position: absolute;
-  background: #d8dcff;
+  background: linear-gradient(#d5d9ff, #c2c8fc);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -176,7 +176,7 @@ img.unmute {
   font-family: 'Work Sans', sans-serif;
   font-size: 200px;
   text-transform: uppercase;
-  color: #c7cdff;
+  color: #afb8ff;
   line-height: 200px;
 }
 .container {
@@ -192,6 +192,7 @@ img.unmute {
   position: absolute;
   top: 0;
   padding: 40px;
+  width: 100vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -213,6 +214,22 @@ img.unmute {
   letter-spacing: 3px;
   margin: 0px 10px 0px 10px;
   cursor: pointer;
+}
+.container .header .sound {
+  transition-duration: 0.2s;
+  color: #95a0f5;
+}
+.container .header .sound:hover {
+  color: #000;
+}
+.container .header .soundActive {
+  color: #000;
+}
+.container .header .sounds {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: row;
 }
 .container .header span {
   margin-top: 2px;
@@ -271,10 +288,10 @@ img.unmute {
   cursor: pointer;
   pointer-events: auto;
 }
-.container .credits {
+.container .credits-modal {
   background: #fff4de;
 }
-.container .welcome {
+.container .welcome-modal {
   opacity: 1;
   z-index: 3;
   background: #ffeff4;

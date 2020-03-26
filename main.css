@@ -75,6 +75,35 @@ a {
 /**
  * START
  */
+button {
+  background: #c7cdff;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  width: 100px;
+  height: 35px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  user-select: none;
+  pointer-events: auto;
+  outline: none;
+  font-size: 20;
+  transition-duration: 0.5s;
+}
+button:hover {
+  background: #fff;
+  color: #c7cdff;
+}
+button.okay {
+  background: #ff93bc;
+}
+button.okay:hover {
+  background: #fff;
+  color: #ff93bc;
+}
 .start {
   z-index: 10;
   position: absolute;
@@ -93,27 +122,7 @@ a {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-bottom: 20px;
   font-weight: 800;
-}
-.start button {
-  color: #c7cdff;
-  padding: 5px 10px 5px 10px;
-  width: 100px;
-  height: 35px;
-  border: none;
-  border-radius: 5px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  cursor: pointer;
-  user-select: none;
-  outline: none;
-  font-size: 20;
-  transition-duration: 0.5s;
-}
-.start button:hover {
-  background: #c7cdff;
-  color: #fff;
 }
 /**
  * CANVAS
@@ -176,7 +185,7 @@ img.unmute {
   align-items: flex-start;
 }
 .container .header {
-  z-index: 6;
+  z-index: 2;
   position: absolute;
   top: 0;
   padding: 40px;
@@ -217,7 +226,7 @@ img.unmute {
   height: 100vh;
   opacity: 0;
   pointer-events: none;
-  background: #ffeff4;
+  background: #dbf1ff;
   will-change: transform;
 }
 .container .modal .title {
@@ -232,11 +241,14 @@ img.unmute {
   font-family: 'Work Sans', sans-serif;
   font-size: 200px;
   text-transform: uppercase;
-  color: #ffe6f0;
+  color: #c9eaff;
   line-height: 200px;
 }
 .container .modal .title h1.credits {
   color: #ffecc4;
+}
+.container .modal .title h1.welcome {
+  color: #ffe6f0;
 }
 .container .modal .container {
   position: relative;
@@ -257,6 +269,11 @@ img.unmute {
 }
 .container .credits {
   background: #fff4de;
+}
+.container .welcome {
+  opacity: 1;
+  z-index: 3;
+  background: #ffeff4;
 }
 .hidden {
   display: none;

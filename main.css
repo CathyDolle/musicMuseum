@@ -29,6 +29,21 @@ body {
   background: #d8dcff;
 }
 /**
+ * TYPO
+ */
+p {
+  font-family: lato;
+  font-weight: 200;
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  pointer-events: auto;
+}
+/**
  * CURSOR
  */
 .cursor-container .pointer {
@@ -61,7 +76,7 @@ body {
  * START
  */
 .start {
-  z-index: 4;
+  z-index: 10;
   position: absolute;
   background: #d8dcff;
   width: 100vw;
@@ -79,6 +94,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 20px;
+  font-weight: 800;
 }
 .start button {
   color: #c7cdff;
@@ -122,6 +138,7 @@ z-index 3 canvas {
  */
 img.mute,
 img.unmute {
+  z-index: 6;
   position: absolute;
   bottom: 40px;
   right: 40px;
@@ -136,7 +153,7 @@ img.unmute {
   z-index: -2;
   position: absolute;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 30px;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -159,6 +176,7 @@ img.unmute {
   align-items: flex-start;
 }
 .container .header {
+  z-index: 6;
   position: absolute;
   top: 0;
   padding: 40px;
@@ -189,45 +207,55 @@ img.unmute {
 }
 .container .modal {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  will-change: transform;
   position: absolute;
-  padding: 200px;
+  padding: 30px;
   width: 100vw;
   height: 100vh;
   opacity: 0;
   pointer-events: none;
-  background: #dbf1ff;
+  background: #ffeff4;
+  will-change: transform;
 }
-.container .modal .close {
+.container .modal .title {
   position: absolute;
-  right: 15px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 30px;
+}
+.container .modal .title h1 {
+  z-index: -1;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 200px;
+  text-transform: uppercase;
+  color: #ffe6f0;
+  line-height: 200px;
+}
+.container .modal .title h1.credits {
+  color: #ffecc4;
+}
+.container .modal .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: auto;
+}
+.container .modal .container .close {
+  position: absolute;
+  right: -50px;
+  top: -50px;
   width: 20px;
   height: 20px;
   cursor: pointer;
   pointer-events: auto;
 }
-.container .modal h1 {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 200px;
-  text-transform: uppercase;
-  color: #bee6ff;
-  line-height: 200px;
-}
-.container .modal .container {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  height: auto;
-}
-.container .modal .container p {
-  font-family: lato;
-  font-weight: 200;
-  font-size: 40px;
+.container .credits {
+  background: #fff4de;
 }
 .hidden {
   display: none;

@@ -206,6 +206,7 @@ img.unmute {
   font-weight: 1000;
 }
 .container .modal {
+  z-index: -10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,8 +267,8 @@ img.unmute {
   animation-fill-mode: forwards;
 }
 .closeModal {
-  animation-name: closeModal;
-  animation-duration: 0.4s;
+  animation-name: fadeOut;
+  animation-duration: 0s;
   animation-fill-mode: forwards;
 }
 .openModal {
@@ -337,38 +338,6 @@ img.unmute {
   }
   100% {
     opacity: 1;
-  }
-}
-@-moz-keyframes closeModal {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes closeModal {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-o-keyframes closeModal {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes closeModal {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 

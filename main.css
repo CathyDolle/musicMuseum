@@ -16,9 +16,6 @@
   font-weight: normal;
   font-style: normal;
 }
-html {
-  scroll-behavior: smooth;
-}
 * {
   margin: 0;
   padding: 0;
@@ -47,37 +44,28 @@ b {
   font-weight: 400;
 }
 /**
- * CURSOR
- */
-.cursor-container .pointer {
-  width: 5pt;
-  height: 5pt;
-  background: #000;
-  border-radius: 50%;
-  position: absolute;
-  top: -2.5pt;
-  left: -2.5pt;
-  transform: translate(0, 0);
-  transition: all 0.05s ease;
-}
-.cursor-container .cursor-wrapper {
-  position: absolute;
-  top: -15pt;
-  left: -15pt;
-  transform: translate(0, 0);
-  width: 30pt;
-  height: 30pt;
-  transition: all 0.1s ease;
-}
-.cursor-container .cursor-wrapper .cursor {
-  width: 30pt;
-  height: 30pt;
-  border: 1pt solid #000;
-  border-radius: 50%;
-}
-/**
  * START
  */
+.start {
+  z-index: 10;
+  position: absolute;
+  background: linear-gradient(#d5d9ff, #c2c8fc);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: lato;
+  will-change: transform;
+}
+.start p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
 button {
   background: #afb8ff;
   color: #fff;
@@ -106,26 +94,6 @@ button.okay {
 button.okay:hover {
   background: #fff;
   color: #ff93bc;
-}
-.start {
-  z-index: 10;
-  position: absolute;
-  background: linear-gradient(#d5d9ff, #c2c8fc);
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: lato;
-  will-change: transform;
-}
-.start p {
-  color: #fff;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 800;
 }
 /**
  * CANVAS
@@ -159,7 +127,7 @@ img.unmute {
   cursor: pointer;
 }
 /*
- * CONTAINER MENU
+ * CONTAINER 
  */
 .background {
   z-index: -2;
